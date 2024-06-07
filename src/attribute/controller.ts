@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post } from "@nestjs/common";
+import { Body, Controller, Get } from "@nestjs/common";
 import * as newrelic from "newrelic";
 
 import { AttributeService } from "./service";
