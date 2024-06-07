@@ -9,7 +9,7 @@ export class AttributeController {
   constructor(private readonly service: AttributeService) {}
 
   @Get()
-  async handle(@Body() body: AttributeBody) {
+  async handle() {
     await newrelic.startBackgroundTransaction(
       "AttributeController",
       async () => {
